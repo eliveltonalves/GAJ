@@ -13,20 +13,20 @@ import javax.swing.JPanel;
 public class Front extends JFrame{
 
 	
-	private ImageIcon img = new ImageIcon("../imgs/nome.jpg");
+	private ImageIcon img = new ImageIcon(":/ProjetoGAJ/imgs/nome.jpg");
 	private JLabel logo = new JLabel(img);
 	
-	private ImageIcon imgf = new ImageIcon("../imgs/fundo.png");
+	private ImageIcon imgf = new ImageIcon(":/ProjetoGAJ/imgs/fundo.png");
 	private JLabel logof = new JLabel(imgf);
 	
-	private ImageIcon imgu = new ImageIcon("../imgs/photo.jpg");
+	private ImageIcon imgu = new ImageIcon(":/ProjetoGAJ/imgs/photo.jpg");
 	private JLabel logou = new JLabel(imgu);
 	
 	private JLabel use;
 	private JLabel calendario;;
 	
 	
-	private ImageIcon pre = new ImageIcon("../imgs/dese.png");
+	private ImageIcon pre = new ImageIcon(":/ProjetoGAj/imgs/dese.png");
 	private JLabel pre1;;
 
 	
