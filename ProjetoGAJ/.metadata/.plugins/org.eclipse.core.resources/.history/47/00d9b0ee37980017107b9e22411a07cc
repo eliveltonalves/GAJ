@@ -1,0 +1,75 @@
+import java.util.ArrayList;
+
+public class GerenciadorPessoas  {
+	
+	//private ArrayList<GerenciadorPessoas> vet;
+	private String id;
+	private String senha;
+	
+	
+	
+	private ArrayList<Pessoa> vetPessoa;
+	
+	
+	
+	public GerenciadorPessoas(){
+		
+		
+		
+		
+
+			
+		}
+		
+	
+		
+	public void passarPessoa(String idd, String se){
+		
+		
+		
+			
+		vetPessoa = new ArrayList<>();
+		
+		
+			
+			
+			
+			
+		
+		
+		
+		
+		
+		
+	}
+
+
+
+	public String getId() {
+		return id;
+	}
+
+
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+
+
+	public String getSenha() {
+		return senha;
+	}
+
+
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+		
+		
+		
+	
+	
+
+}

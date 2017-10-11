@@ -1,0 +1,66 @@
+import java.util.ArrayList;
+
+public class GerenciadorPessoas  {
+	
+	//private ArrayList<GerenciadorPessoas> vet;
+	
+	private Usuario us = new Usuario();;
+	
+	
+	private ArrayList<Usuario> vetPessoa;
+	
+	
+	
+	public GerenciadorPessoas(){
+		
+		
+		
+		
+
+			
+		}
+		
+	
+		
+	public void passarPessoa(String nome, String id, String senha, String numins, String seccional, String tpinscri){
+		
+		
+		
+			
+		vetPessoa = new ArrayList<Usuario>();
+		
+		
+		us.setNome(nome);
+		//us.setDataDeNascimento(data);
+		us.setId(id);
+		us.setSenha(senha);
+		us.setInscricao(numins);
+		us.setSeccional(seccional);
+		us.setTipoinscri(tpinscri);
+		
+		
+		vetPessoa.add(us);
+		
+		
+	
+	}
+
+
+	public void imprime(){
+		
+		
+	for(int i=0; i<vetPessoa.size(); i++){
+		
+		
+		System.out.println(vetPessoa.iterator());
+		
+		
+	}
+		
+	}
+		
+		
+	
+	
+
+}

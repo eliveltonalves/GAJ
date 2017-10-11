@@ -1,0 +1,111 @@
+import java.awt.Color;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class GerenciadorPessoas  {
+	
+	//private ArrayList<GerenciadorPessoas> vet;
+	
+	private Usuario us = new Usuario();
+	
+	
+	
+	
+	private ArrayList<Usuario> vetPessoa = new ArrayList<Usuario>();
+	
+	
+	
+	public GerenciadorPessoas(){
+		
+		
+		
+		
+
+			
+		}
+		
+	
+		
+	public void passarPessoa(String nome,String data,  String id, String senha, String numins, String seccional, String tpinscri){
+		
+		
+		
+			
+		////vetPessoa = new ArrayList<Usuario>();
+		
+		
+		us.setNome(nome);
+		//us.setDataDeNascimento(data);
+		us.setId(id);
+		us.setSenha(senha);
+		us.setInscricao(numins);
+		us.setSeccional(seccional);
+		us.setTipoinscri(tpinscri);
+		
+		
+		vetPessoa.add(us);
+		
+		
+	
+	}
+
+
+	public void imprime(){
+		
+		
+		
+		
+		JFrame frame = new JFrame();
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+		frame.setBounds(100, 400, 400, 200);
+		frame.setLocationRelativeTo(null);
+		frame.setLayout(null);
+		frame.setResizable(false);
+		
+		JPanel panel =new JPanel();
+		panel.setVisible(true);
+		panel.setBounds(5, 5, 380, 180);
+		panel.setBackground(Color.GRAY);
+		panel.setLayout(null);
+		
+		
+		JLabel label = new JLabel("OK");
+		label.setVisible(true);
+		label.setBounds(5, 50, 70, 30);
+		
+		
+		panel.add(label);
+		
+		frame.add(panel);
+		
+	
+		for(Usuario p: vetPessoa){
+			System.out.println(p.getId());
+			System.out.println(p.getNome());
+			
+			
+		}
+		
+	
+		
+	}
+
+
+	public static void main(String [] args){
+		
+		
+		GerenciadorPessoas p = new GerenciadorPessoas();
+		p.imprime();
+		
+		
+		
+	}
+		
+	
+	
+
+}
