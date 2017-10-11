@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Cadastro extends JFrame {
+	private String unidade = "d";
 	private ImageIcon img = new ImageIcon("../imgs/nome.jpg");
 	private JPanel p;
 	private JLabel logo = new JLabel(img);

@@ -14,11 +14,12 @@ import javax.swing.border.Border;
 
 public class Interface extends JFrame {
 	
+	private String unidade = "d";
 	private JLabel logo;
-	private ImageIcon img = new ImageIcon("../imgs/nome.jpg");
+	private ImageIcon img = new ImageIcon("/ProjetoGAJ/imgs/nome.jpg");
 	private JLabel fundo;
-	private ImageIcon imgf = new ImageIcon("../imgs/fundo.png");
-	private ImageIcon imgbt = new ImageIcon("../imgs/b1.png");
+	private ImageIcon imgf = new ImageIcon("/ProjetoGAJ/imgs/fundo.png");
+	private ImageIcon imgbt = new ImageIcon("/ProjetoGAJ/imgs/b1.png");
 	
 	
 	
@@ -36,7 +37,7 @@ public class Interface extends JFrame {
 	private JLabel conta;
 	private JButton criar;
 	private JLabel text;
-	private ImageIcon cria = new ImageIcon("../imgs/cad.png");
+	private ImageIcon cria = new ImageIcon("/ProjetoGAJ/imgs/cad.png");
 	
 	private JPanel prin;
 	//////////////////////////////////////////////////////////

@@ -12,7 +12,8 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class Cadastro extends JFrame {
-	private ImageIcon img = new ImageIcon("../imgs/nome.jpg");
+	private String unidade = "d";
+	private ImageIcon img = new ImageIcon(unidade+":/ProjetoGAJ/imgs/nome.jpg");
 	private JPanel p;
 	private JLabel logo = new JLabel(img);
 	
@@ -38,13 +39,13 @@ public class Cadastro extends JFrame {
 	private JLabel l9;
 	
 	
-	private ImageIcon imgbt = new ImageIcon("../imgs/efet.png");
+	private ImageIcon imgbt = new ImageIcon(unidade+":/ProjetoGAJ/imgs/efet.png");
 	private JButton bt = new JButton(imgbt);
 	
-	private ImageIcon cancela = new ImageIcon("../imgs/can.png");
+	private ImageIcon cancela = new ImageIcon(unidade+":/ProjetoGAJ/imgs/can.png");
 	private JButton can = new JButton(cancela);
 	
-	private ImageIcon lin = new ImageIcon("../imgs/linha.png");
+	private ImageIcon lin = new ImageIcon(unidade+":/ProjetoGAJ/imgs/linha.png");
 	private JLabel linha = new JLabel(lin);
 	
 	public Cadastro (){

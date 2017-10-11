@@ -12,42 +12,43 @@ import javax.swing.JPanel;
 
 public class Front extends JFrame{
 
+	private String unidade= "d";
 	
-	private ImageIcon img = new ImageIcon(":/ProjetoGAJ/imgs/nome.jpg");
+	private ImageIcon img = new ImageIcon(unidade+":/ProjetoGAJ/imgs/nome.jpg");
 	private JLabel logo = new JLabel(img);
 	
-	private ImageIcon imgf = new ImageIcon(":/ProjetoGAJ/imgs/fundo.png");
+	private ImageIcon imgf = new ImageIcon(unidade+":/ProjetoGAJ/imgs/fundo.png");
 	private JLabel logof = new JLabel(imgf);
 	
-	private ImageIcon imgu = new ImageIcon(":/ProjetoGAJ/imgs/photo.jpg");
+	private ImageIcon imgu = new ImageIcon(unidade+":/ProjetoGAJ/imgs/photo.jpg");
 	private JLabel logou = new JLabel(imgu);
 	
 	private JLabel use;
 	private JLabel calendario;;
 	
 	
-	private ImageIcon pre = new ImageIcon(":/ProjetoGAj/imgs/dese.png");
+	private ImageIcon pre = new ImageIcon(unidade+":/ProjetoGAj/imgs/dese.png");
 	private JLabel pre1;;
 
 	
 	/////IMAGENS DOS BOTOES DO PAINEL DE BOTEOS/////////////////////////
 	  private JLabel ll = new JLabel("dsfs ");
 	  
-	    private ImageIcon img1 = new ImageIcon("../imgs/cli.png");
+	    private ImageIcon img1 = new ImageIcon(unidade+":/ProjetoGAJ/imgs/cli.png");
 		
-		private ImageIcon img2 = new ImageIcon("../imgs/add.png");
+		private ImageIcon img2 = new ImageIcon(unidade+":/ProjetoGAJ/imgs/add.png");
 		
-		private ImageIcon img3 = new ImageIcon("../imgs/pes.png");
+		private ImageIcon img3 = new ImageIcon(unidade+":/ProjetoGAJ/imgs/pes.png");
 		
-		private ImageIcon img4 = new ImageIcon("../imgs/rec.png");
+		private ImageIcon img4 = new ImageIcon(unidade+":/ProjetoGAJ/imgs/rec.png");
 	
-		private ImageIcon img5 = new ImageIcon("../imgs/pra.png");
+		private ImageIcon img5 = new ImageIcon(unidade+":/ProjetoGAJ/imgs/pra.png");
 			
-		private ImageIcon img6 = new ImageIcon("../imgs/agen.png");
+		private ImageIcon img6 = new ImageIcon(unidade+":/ProjetoGAJ/imgs/agen.png");
 			
-		private ImageIcon img7 = new ImageIcon("../imgs/pende.png");
+		private ImageIcon img7 = new ImageIcon(unidade+":/ProjetoGAJ/imgs/pende.png");
 			
-		private ImageIcon img8 = new ImageIcon("../imgs/disp.png");
+		private ImageIcon img8 = new ImageIcon(unidade+":/ProjetoGAJ/imgs/disp.png");
 		
 	
 		
@@ -182,13 +183,13 @@ public class Front extends JFrame{
 		calendario.setFont(new Font("Arial", Font.CENTER_BASELINE, 14));
 		calendario.setForeground(Color.black);
 		
-		 ImageIcon imgg = new ImageIcon("../imgs/perf.png");
+		 ImageIcon imgg = new ImageIcon(unidade+":/ProjetoGAJ/imgs/perf.png");
 		 JButton bt = new JButton(imgg);
 		bt.setVisible(true);
 		bt.setBounds(150, 80, 180, 25);
 		
 		
-		 ImageIcon imga = new ImageIcon("../imgs/sair.png");
+		 ImageIcon imga = new ImageIcon(unidade+":/ProjetoGAJ/imgs/sair.png");
 		 JButton bt1 = new JButton(imga);
 		bt1.setVisible(true);
 		bt1.setBounds(340, 80, 150, 25);
