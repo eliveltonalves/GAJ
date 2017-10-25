@@ -204,21 +204,33 @@ public class Cadastro extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				 String aux = nome.getText();
-				 String aux1 = data.getText(); 
-				 String aux2 = id.getText();
-				 String aux3 = senha.getText();
-				 String aux4 = Ninscri.getText();
-				 String aux5 = seccional.getText();
-				 String aux6 = TipoInscri.getText();
+				//Foi editado daqui >>>>>>>>>>>>>>
+				///
+				
+				ConexaoBanco b = new ConexaoBanco();
+				
+				 String aux = nome.getText().toString();
+				 String aux1 =  data.getText().toString(); 
+				    int aux2 = Integer.valueOf(id.getText());
+				 String aux3 = senha.getText().toString();
+				 String aux4 = Ninscri.getText().toString();
+				 String aux5 = seccional.getText().toString();
+				 String aux6 = TipoInscri.getText().toString();
+			     String user = "usuario";
+				 
+				 b.conectar();
 			
+			     b.inserirUsuario(user ,aux2 , aux, aux1, aux3, aux4, aux5, aux6);
+			     
+			     b.desconectar();	 
+				 // Até aqui...
 				
 			Front front = new Front();		
 					
 			GerenciadorPessoas gere = new GerenciadorPessoas();
 
-			gere.passarPessoa(aux,aux1, aux2, aux3, aux4, aux5, aux6);
-			gere.imprime();
+			//gere.passarPessoa(aux,aux1, aux2, aux3, aux4, aux5, aux6);
+			//gere.imprime();
 		
 		
 			
